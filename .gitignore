@@ -1,0 +1,21 @@
+# Secrets and local config (never commit)
+.mcp.json
+.env
+.env.local
+*.key
+*.pem
+
+# Daily research outputs (these are YOUR runs, not part of the template)
+inbox/outputs/md/*.md
+!inbox/outputs/md/.gitkeep
+
+# Temp handoff files written between Phase 1 and Phase 2
+/tmp/phase1/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+.vscode/
+.idea/

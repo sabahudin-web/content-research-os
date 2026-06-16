@@ -1,0 +1,26 @@
+{
+  "_comment": "Copy this file to .mcp.json and fill in your own credentials. .mcp.json is git-ignored so your keys never get committed. These are the MCP servers the /content-research command uses. Notion is required. Fathom and the LinkedIn fetcher are optional but recommended. Trigify is NOT here: it runs as a command-line tool, see SETUP.md.",
+
+  "mcpServers": {
+    "Notion": {
+      "_comment": "REQUIRED. The command writes a daily parent page plus up to 26 winner subpages into your Notion 'Content Research' database. Connect Notion in your Claude client, or use the hosted Notion MCP and paste your token below.",
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp",
+      "_auth_note": "Authenticate Notion through your Claude client's connector UI if available. Otherwise follow the Notion MCP docs to obtain a token."
+    },
+
+    "Fathom": {
+      "_comment": "OPTIONAL. Phase 1 Step 3.5 pulls the last 24h of your call recordings and mines the questions clients asked, turning them into content ideas. Skip this server if you do not use Fathom. The command degrades cleanly with no calls found.",
+      "type": "http",
+      "url": "https://mcp.fathom.video/mcp",
+      "_auth_note": "Connect Fathom through your Claude client connector, or follow Fathom MCP docs for a token."
+    },
+
+    "linkedin-fetch": {
+      "_comment": "OPTIONAL but recommended. Phase 2 uses a LinkedIn 'get post by url' tool to pull the full body of winning LinkedIn posts when the Trigify pull truncated them. Any MCP server that exposes a get_linkedin_post_by_url tool works. Replace the url and auth with your provider's.",
+      "type": "http",
+      "url": "https://YOUR_LINKEDIN_FETCH_MCP_URL/mcp",
+      "_auth_note": "Provider-specific. See SETUP.md for options."
+    }
+  }
+}
