@@ -1,3 +1,14 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/branding/logo-dark.png">
+    <img src="assets/branding/logo.png" alt="Sabahudin Murtic" width="360">
+  </picture>
+</p>
+
+<p align="center">
+  Built by <a href="https://www.linkedin.com/in/sabahudin-murtic/">Sabahudin "Sab" Murtic</a>
+</p>
+
 # Content Research for Claude Code
 
 A daily content research engine that runs as a single Claude Code command: **`/content-research`**.
@@ -110,3 +121,27 @@ you exactly where your Trigify credits and tokens went, so you can trim what is 
 
 Use it, fork it, adapt it to your business. See `LICENSE` if present, otherwise treat this as provided
 as-is, no warranty.
+
+---
+
+## About the author
+
+<table>
+<tr>
+<td width="130" valign="top">
+<img src="assets/branding/sab-photo.png" alt="Sabahudin Murtic" width="110">
+</td>
+<td valign="top">
+
+**Sabahudin "Sab" Murtic**
+
+I build Claude Code second-brain systems for solopreneurs and small business owners. This content research
+engine is one of the routines I run my own business on, packaged here so you can run it too.
+
+If this is useful to you, follow along and say hi:
+
+[Follow me on LinkedIn](https://www.linkedin.com/in/sabahudin-murtic/)
+
+</td>
+</tr>
+</table>
